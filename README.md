@@ -1,2 +1,2 @@
 # ngrxshoppingcart
-Shopping cart web app using ngrx store
+Shopping cart angular web app using ngrx store 
