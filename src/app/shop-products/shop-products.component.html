@@ -1,0 +1,28 @@
+<!-- <div class="products">
+  <div *ngFor="let product of products()" class="product">
+    <div class="image">
+      <img src="{{product.image}}">
+    </div>
+    <div class="product-details">
+      <div class="title">{{ product.name }}</div>
+      <div class="descritpion">{{ product.description }}</div>
+      <div class="space"></div>
+      <div class="price">$ {{ product.price | number: '1.2-2' }} <button class="add-cart-button" (click)="buyProduct(product)" > + BUY </button></div>
+    </div>
+  </div>
+</div> -->
+<div class="products">
+  <div *ngFor="let product of products()" class="product">
+<div class="card mb-4 box-shadow">
+  <img class="card-img-top" src="{{product.image }}" height="200px" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-title">{{product.name}}</p>
+    <p class="card-text"><strong>Rs. {{product.price| number: '1.2-2'}}</strong></p>
+    <p class="card-text">{{product.description}}</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="add-cart-button" (click)="buyProduct(product)">+Buy</button>
+      </div>
+    </div>
+  </div>
+</div>
